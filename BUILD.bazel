@@ -1,0 +1,15 @@
+cc_binary(
+    name = "cat",
+    srcs = ["cat.c"],
+)
+
+cc_binary(
+    name = "cat_io_uring",
+    srcs = ["cat_io_uring.c"],
+)
+
+cc_binary(
+    name = "cat_liburing",
+    srcs = ["cat_io_uring.c"],
+    linkopts = ["-luring"],
+)
