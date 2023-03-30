@@ -13,3 +13,9 @@ cc_binary(
     srcs = ["cat_io_uring.c"],
     linkopts = ["-luring"],
 )
+
+cc_binary(
+    name = "cp_liburing",
+    srcs = ["cp_liburing.c"],
+    linkopts = ["-luring"],
+)
